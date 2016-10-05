@@ -23,7 +23,6 @@
         android:src="@drawable/spoilerificlogo"
         android:layout_gravity="left"
         android:layout_marginBottom="154dp"
-        android:layout_above="@+id/textView2"
         android:layout_centerHorizontal="true" />
 
     <!--<TextView-->
@@ -87,8 +86,9 @@
         android:layout_gravity="center_horizontal"
         android:contentDescription="icon"
         android:background="#a8b4bb"
-        android:layout_above="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <!--<TextView-->
     <!--android:layout_width="wrap_content"-->
@@ -107,19 +107,6 @@
     <!--android:layout_gravity="center_horizontal" />-->
 
 
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Forgot Password?"
-        android:id="@+id/textView2"
-        android:layout_gravity="center_horizontal"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="51dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -127,6 +114,7 @@
         android:text="Create an account"
         android:id="@+id/textView3"
         android:layout_gravity="center_horizontal"
-        android:layout_above="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp" />
 </RelativeLayout>

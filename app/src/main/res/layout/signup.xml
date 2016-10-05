@@ -26,57 +26,65 @@
         android:layout_height="wrap_content"
         android:id="@+id/uname_txt"
         android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Username" />
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_alignLeft="@+id/lname_txt"
+        android:layout_alignStart="@+id/lname_txt"
+        android:layout_alignRight="@+id/lname_txt"
+        android:layout_alignEnd="@+id/lname_txt"
+        android:singleLine="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/email_txt"
         android:layout_below="@+id/uname_txt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:hint="Email"
-        android:inputType="none" />
+        android:inputType="text"
+        android:layout_alignLeft="@+id/uname_txt"
+        android:layout_alignStart="@+id/uname_txt"
+        android:layout_alignRight="@+id/uname_txt"
+        android:layout_alignEnd="@+id/uname_txt"
+        android:singleLine="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pword_txt"
         android:layout_below="@+id/email_txt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
         android:hint="Password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_alignLeft="@+id/email_txt"
+        android:layout_alignStart="@+id/email_txt"
+        android:layout_alignRight="@+id/email_txt"
+        android:layout_alignEnd="@+id/email_txt"
+        android:singleLine="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lname_txt"
         android:hint="Last Name"
+        android:inputType="text"
         android:layout_above="@+id/uname_txt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignLeft="@+id/fname_txt"
+        android:layout_alignStart="@+id/fname_txt"
+        android:layout_alignRight="@+id/fname_txt"
+        android:layout_alignEnd="@+id/fname_txt"
+        android:singleLine="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/fname_txt"
         android:hint="First Name"
+        android:inputType="text"
         android:layout_above="@+id/lname_txt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:singleLine="true" />
 
 
 
@@ -86,10 +94,12 @@
         android:id="@+id/cpword_txt"
         android:hint="Confirm Password"
         android:layout_below="@+id/pword_txt"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:layout_alignLeft="@+id/pword_txt"
+        android:layout_alignStart="@+id/pword_txt"
+        android:layout_alignRight="@+id/pword_txt"
+        android:layout_alignEnd="@+id/pword_txt"
+        android:nestedScrollingEnabled="false"
+        android:singleLine="true" />
 
 </RelativeLayout>
