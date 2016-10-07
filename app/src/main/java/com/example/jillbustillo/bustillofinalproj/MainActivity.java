@@ -79,9 +79,10 @@ public class MainActivity extends AppCompatActivity {
         txtview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i;
-                i = new Intent(MainActivity.this, SignUp.class);
-                startActivity(i);
+                //Intent i;
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
+                startActivity(intent);
+                finish();
             }
 
         });

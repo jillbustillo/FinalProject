@@ -22,19 +22,14 @@
             android:name=".MainActivity"
             android:label="@string/app_name">
             <intent-filter>
-                <action android:name="com.mlabs.bbm.firstandroidapp.MainActivity"/>
+                <action android:name="com.mlabs.bbm.firstandroidapp.MainActivity" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
 
 
-        <activity
-            android:name=".SignUp">
-            <intent-filter>
-                <action android:name="com.mlabs.bbm.firstandroidapp.SignUp" />
-            </intent-filter>
-        </activity>
+
 
         <activity
             android:name=".OnTouchActivity">
@@ -42,7 +37,12 @@
                 <action android:name="com.mlabs.bbm.firstandroidapp.OnTouchActivity" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".SignUp">
+            <intent-filter>
+                <action android:name="com.mlabs.bbm.firstandroidapp.SignUp" android:noHistory="true" />
+            </intent-filter>
+        </activity>
 
 
 
